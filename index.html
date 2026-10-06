@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jollof Spot — Firewood Party Jollof in Benin City</title>
+  <meta name="description" content="Smoky, soulful Nigerian jollof made like home. Firewood party jollof, grilled croaker, dodo and chilled local drinks in Benin City." />
+  <meta name="theme-color" content="#d83a14" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            scotch: "#d83a14",
+            burnt: "#e86f1c",
+            leaf: "#2e7d32",
+            ebony: "#1c1715",
+            linen: "#fdf8f3",
+            tint: "#fbefe3",
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="antialiased">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 border-b border-ebony/5 bg-linen/90 backdrop-blur">
+    <div class="mx-auto flex h-16 max-w-[1280px] items-center justify-between px-4 md:px-8 lg:px-14">
+      <a href="#top" class="font-display text-xl font-extrabold tracking-tight">
+        <span class="text-scotch">Jollof</span> Spot
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-semibold md:flex" aria-label="Main">
+        <a href="#menu" class="hover:text-scotch">Menu</a>
+        <a href="#story" class="hover:text-scotch">Our Story</a>
+        <a href="#visit" class="hover:text-scotch">Visit</a>
+        <a href="#contact" class="hover:text-scotch">Contact</a>
+      </nav>
+      <a href="#contact" class="btn btn-primary !min-h-[44px] !px-5 !text-sm">Order now</a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Hero -->
+    <section class="hero text-white">
+      <div class="mx-auto max-w-[1280px] px-4 py-20 md:px-8 md:py-32 lg:px-14 lg:py-40">
+        <span class="chip bg-white/15 text-white backdrop-blur">AUTHENTIC FIREWOOD TASTE · BENIN CITY</span>
+        <h1 class="mt-5 max-w-2xl text-[38px] font-extrabold leading-[44px] tracking-tight md:text-[56px] md:leading-[64px]">
+          Jollof Spot: <span class="text-burnt">Smoky, Soulful</span> Jollof Made Like Home.
+        </h1>
+        <p class="mt-5 max-w-xl text-base leading-7 text-white/85 md:text-lg md:leading-7">
+          Firewood party jollof, freshly grilled croaker and crisp ice-cold local drinks, crafted with the authentic family pride we've served since 2018.
+        </p>
+        <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+          <a href="#contact" class="btn btn-primary btn-xl">Order now 🍛</a>
+          <a href="#menu" class="btn btn-glass">Explore the menu</a>
+        </div>
+        <ul class="mt-8 flex flex-col gap-2 text-sm text-white/80 sm:flex-row sm:gap-6">
+          <li>🔥 Cooked fresh over firewood</li>
+          <li>🛵 Pickup &amp; doorstep delivery</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Signature dishes -->
+    <section id="menu" class="mx-auto max-w-[1280px] px-4 py-16 md:px-8 md:py-24 lg:px-14">
+      <p class="text-xs font-bold uppercase tracking-widest text-scotch">The house stars</p>
+      <h2 class="mt-2 text-[30px] font-bold leading-[38px] tracking-tight md:text-[40px] md:leading-[48px]">Our Signature Dishes</h2>
+      <p class="mt-3 max-w-xl text-[15px] leading-6 text-ebony/70">Handpicked Edo and West African classics, perfected over years. Cooked piping hot and dished up in unapologetic Nigerian portions.</p>
+
+      <div class="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
+
+        <article class="card flex flex-col overflow-hidden">
+          <div class="dish-img"><img src="images/jollof-suya.png" alt="Bowl of party jollof with suya skewer and fried plantain" loading="lazy" /></div>
+          <div class="flex flex-1 flex-col p-4 md:p-6">
+            <div class="flex flex-wrap gap-2"><span class="chip chip-orange">Party Heat 🌶🌶</span></div>
+            <h3 class="mt-3 text-xl font-semibold">Firewood Party Jollof</h3>
+            <p class="mt-2 flex-1 text-[15px] leading-6 text-ebony/70">Smoky long-grain rice slow-cooked in a rich tomato and scotch bonnet base, with that prized bottom-pot crust.</p>
+            <div class="mt-5 flex items-center justify-between"><span class="price">₦4,500</span><a href="#contact" aria-label="Order Firewood Party Jollof" class="btn btn-primary !min-h-[44px] !w-11 !px-0 text-xl">+</a></div>
+          </div>
+        </article>
+
+        <article class="card flex flex-col overflow-hidden">
+          <div class="dish-img"><img src="images/grilled-croaker.png" alt="Whole grilled croaker on a slate board with peppers and lime" loading="lazy" /></div>
+          <div class="flex flex-1 flex-col p-4 md:p-6">
+            <div class="flex flex-wrap gap-2"><span class="chip chip-orange">Auntie's Warning 🌶🌶🌶</span></div>
+            <h3 class="mt-3 text-xl font-semibold">Grilled Whole Croaker</h3>
+            <p class="mt-2 flex-1 text-[15px] leading-6 text-ebony/70">Fresh croaker from the morning market, grilled over coals and smothered in smoky pepper-onion sauce.</p>
+            <div class="mt-5 flex items-center justify-between"><span class="price">₦7,200</span><a href="#contact" aria-label="Order Grilled Whole Croaker" class="btn btn-primary !min-h-[44px] !w-11 !px-0 text-xl">+</a></div>
+          </div>
+        </article>
+
+        <article class="card flex flex-col overflow-hidden">
+          <div class="dish-img"><img src="images/jollof-plate.png" alt="Golden fried plantain (dodo)" style="object-position: 15% 35%;" loading="lazy" /></div>
+          <div class="flex flex-1 flex-col p-4 md:p-6">
+            <div class="flex flex-wrap gap-2"><span class="chip chip-green">Vegan</span><span class="chip chip-orange">Mild 🌶</span></div>
+            <h3 class="mt-3 text-xl font-semibold">Dodo (Fried Plantain)</h3>
+            <p class="mt-2 flex-1 text-[15px] leading-6 text-ebony/70">Ripe plantain fried until caramelised and golden. The sweet, sticky partner every plate of jollof deserves.</p>
+            <div class="mt-5 flex items-center justify-between"><span class="price">₦1,500</span><a href="#contact" aria-label="Order Dodo" class="btn btn-primary !min-h-[44px] !w-11 !px-0 text-xl">+</a></div>
+          </div>
+        </article>
+
+        <article class="card flex flex-col overflow-hidden">
+          <div class="dish-img"><img src="images/drinks.png" alt="Zobo, Chapman and a kunu gourd on a wooden table" loading="lazy" /></div>
+          <div class="flex flex-1 flex-col p-4 md:p-6">
+            <div class="flex flex-wrap gap-2"><span class="chip chip-green">Vegan</span><span class="chip chip-green">Halal</span></div>
+            <h3 class="mt-3 text-xl font-semibold">Chapman &amp; Zobo</h3>
+            <p class="mt-2 flex-1 text-[15px] leading-6 text-ebony/70">Ice-cold, fruity and fizzy. Our house Chapman and hibiscus zobo cool down every scotch bonnet bite.</p>
+            <div class="mt-5 flex items-center justify-between"><span class="price">from ₦1,500</span><a href="#contact" aria-label="Order Chapman and Zobo" class="btn btn-primary !min-h-[44px] !w-11 !px-0 text-xl">+</a></div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="story" class="bg-tint">
+      <div class="mx-auto grid max-w-[1280px] items-center gap-10 px-4 py-16 md:px-8 md:py-24 lg:grid-cols-2 lg:gap-16 lg:px-14">
+        <div class="overflow-hidden rounded-[1.5rem] shadow-[0_12px_32px_-6px_rgba(28,23,21,0.12)]">
+          <figure class="relative">
+            <img src="images/founders.png" alt="Founders Michael and Ngozi smiling in their kitchen" class="aspect-[4/3] w-full object-cover" loading="lazy" />
+            <figcaption class="absolute bottom-3 left-3 rounded-full bg-white/95 px-4 py-2 text-sm font-semibold shadow-lg">Chef Michael &amp; Ngozi · Founders</figcaption>
+          </figure>
+        </div>
+        <div>
+          <p class="text-xs font-bold uppercase tracking-widest text-scotch">Our story</p>
+          <h2 class="mt-2 text-[30px] font-bold leading-[38px] tracking-tight md:text-[40px] md:leading-[48px]">A Labor of Love, Woodsmoke &amp; Edo Heritage</h2>
+          <p class="mt-5 text-base leading-7 text-ebony/75">Jollof Spot started as a backyard feast in GRA, Benin City, grown from a grandmother's cast-iron pot. Real party jollof can't be rushed on an electric cooker, so we still cook ours over firewood, the slow way, until the bottom pot catches just right.</p>
+          <p class="mt-4 text-base leading-7 text-ebony/75">No shortcuts, no synthetic seasonings, and never compromising on the firewood smoke. Every guest is treated like family at a Sunday celebration.</p>
+          <dl class="mt-8 grid grid-cols-3 gap-4 text-center">
+            <div class="card !rounded-2xl p-4"><dt class="sr-only">Plates served</dt><dd class="font-display text-2xl font-extrabold text-scotch">85,000+</dd><p class="text-xs text-ebony/60">plates served</p></div>
+            <div class="card !rounded-2xl p-4"><dt class="sr-only">Rating</dt><dd class="font-display text-2xl font-extrabold text-scotch">4.9/5</dd><p class="text-xs text-ebony/60">guest rating</p></div>
+            <div class="card !rounded-2xl p-4"><dt class="sr-only">Since</dt><dd class="font-display text-2xl font-extrabold text-scotch">2018</dd><p class="text-xs text-ebony/60">cooking with fire</p></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location & hours -->
+    <section id="visit" class="mx-auto max-w-[1280px] px-4 py-16 md:px-8 md:py-24 lg:px-14">
+      <div class="text-center">
+        <p class="text-xs font-bold uppercase tracking-widest text-scotch">Find our hearth</p>
+        <h2 class="mt-2 text-[30px] font-bold leading-[38px] tracking-tight md:text-[40px] md:leading-[48px]">Come Sit With Us in Benin City</h2>
+      </div>
+
+      <div class="mt-10 grid gap-5 md:grid-cols-2 lg:gap-6">
+        <div class="card p-6">
+          <h3 class="text-xl font-semibold">📍 Kitchen address</h3>
+          <p class="mt-2 text-[15px] leading-6 text-ebony/70">14 Airport Road, Opposite Golf Course Gate,<br />GRA, Benin City, Edo State, Nigeria</p>
+          <a href="https://maps.google.com/?q=Airport+Road+GRA+Benin+City" target="_blank" rel="noopener" class="btn btn-secondary mt-5">Open Google Maps</a>
+        </div>
+
+        <div class="card p-6">
+          <h3 class="text-xl font-semibold">🕒 Opening hours</h3>
+          <ul class="mt-3 divide-y divide-ebony/10 text-[15px]">
+            <li class="flex justify-between py-2"><span>Monday – Thursday</span><span class="font-semibold">10:00 AM – 10:00 PM</span></li>
+            <li class="flex justify-between py-2"><span>Friday – Saturday</span><span class="font-semibold">10:00 AM – 12:00 AM</span></li>
+            <li class="flex justify-between py-2"><span>Sunday</span><span class="font-semibold">1:00 PM – 9:00 PM</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial -->
+    <section class="mx-auto max-w-[1280px] px-4 pb-16 md:px-8 md:pb-24 lg:px-14">
+      <div class="quote-band rounded-[1.5rem] px-6 py-12 text-center text-white md:px-16 md:py-16">
+        <blockquote class="mx-auto max-w-3xl font-display text-2xl font-bold leading-snug md:text-3xl">
+          “The smokiest, richest jollof in Edo State. Tastes just like the best December wedding jollof, but available any Tuesday afternoon!”
+        </blockquote>
+        <p class="mt-4 text-sm font-semibold text-white/85">Osas K., Benin City</p>
+        <a href="#contact" class="btn mt-8 bg-white text-scotch hover:-translate-y-0.5">Order now</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Contact footer -->
+  <footer id="contact" class="border-t border-ebony/5 bg-tint">
+    <div class="mx-auto grid max-w-[1280px] gap-10 px-4 py-14 md:grid-cols-2 md:px-8 lg:grid-cols-4 lg:px-14">
+      <div>
+        <p class="font-display text-xl font-extrabold"><span class="text-scotch">Jollof</span> Spot</p>
+        <p class="mt-3 text-sm leading-6 text-ebony/70">Crafting authentic, firewood-cooked party jollof, succulent suya and chilled local drinks since 2018.</p>
+      </div>
+      <div>
+        <h3 class="text-base font-semibold">Order &amp; enquiries</h3>
+        <ul class="mt-3 space-y-2 text-sm text-ebony/70">
+          <li><a href="tel:+2348035550192" class="font-semibold text-scotch hover:underline">+234 803 555 0192</a></li>
+          <li><a href="https://wa.me/2348035550192" class="hover:text-scotch">Chat on WhatsApp</a></li>
+          <li><a href="mailto:hello@jollofspot.example" class="hover:text-scotch">hello@jollofspot.example</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-base font-semibold">Kitchen hours</h3>
+        <p class="mt-3 text-sm leading-6 text-ebony/70">Mon–Thu 10 AM – 10 PM<br />Fri–Sat 10 AM – 12 AM<br />Sun 1 PM – 9 PM</p>
+      </div>
+      <div>
+        <h3 class="text-base font-semibold">Feast enquiries</h3>
+        <p class="mt-3 text-sm text-ebony/70">Parties, weddings or weekly family pots. Get fresh menus in your inbox.</p>
+        <form class="mt-3 flex flex-col gap-2 sm:flex-row md:flex-col lg:flex-row" onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Thank you!'; this.reset();">
+          <label for="email" class="sr-only">Email</label>
+          <input id="email" type="email" required placeholder="Your email" class="min-h-[48px] w-full rounded-xl border-[1.5px] border-[#e6ddd7] bg-[#fffdfb] px-4 text-sm focus:border-scotch focus:outline-none focus:ring-[3px] focus:ring-scotch/15" />
+          <button type="submit" class="btn btn-primary !px-5 !text-sm">Send</button>
+        </form>
+      </div>
+    </div>
+    <div class="border-t border-ebony/10 px-4 py-5 text-center text-xs text-ebony/60">© 2026 Jollof Spot Benin City. All rights reserved.</div>
+  </footer>
+
+  <!-- Floating order bar (mobile) -->
+  <a href="#contact" class="feast-bar btn btn-primary !min-h-[52px] justify-between !px-6 shadow-lg" aria-label="Order now">
+    <span>🍛 Order now</span><span class="font-display">Call / WhatsApp →</span>
+  </a>
+
+</body>
+</html>

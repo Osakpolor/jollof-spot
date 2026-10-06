@@ -1,0 +1,94 @@
+/* Jollof Spot — custom styles layered on top of Tailwind (CDN) */
+:root {
+  --scotch-red: #d83a14;
+  --burnt-orange: #e86f1c;
+  --leaf: #2e7d32;
+  --ebony: #1c1715;
+  --linen: #fdf8f3;
+  --tint: #fbefe3;
+  --shadow-1: 0 2px 8px -2px rgba(28, 23, 21, 0.05), 0 10px 24px -4px rgba(232, 111, 28, 0.07);
+  --shadow-2: 0 8px 16px -4px rgba(28, 23, 21, 0.08), 0 20px 36px -6px rgba(216, 58, 20, 0.12);
+  --shadow-3: 0 12px 32px -6px rgba(28, 23, 21, 0.12), 0 28px 60px -8px rgba(28, 23, 21, 0.18);
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background: var(--linen); color: var(--ebony); font-family: "Plus Jakarta Sans", system-ui, sans-serif; }
+h1, h2, h3, .font-display { font-family: "Outfit", system-ui, sans-serif; }
+
+.card {
+  background: #fff;
+  border: 1px solid rgba(28, 23, 21, 0.06);
+  border-radius: 1.5rem;
+  box-shadow: var(--shadow-1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+.card:hover { transform: translateY(-4px); box-shadow: var(--shadow-2); }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+  min-height: 52px; padding: 0 1.75rem; border-radius: 9999px;
+  font-weight: 700; letter-spacing: 0.02em; font-size: 0.95rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+.btn:active { transform: scale(0.97); }
+.btn-primary { background: var(--scotch-red); color: #fff; box-shadow: var(--shadow-1); }
+.btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-2); }
+.btn-secondary { border: 1.5px solid var(--scotch-red); color: var(--scotch-red); background: #fffbf7; }
+.btn-secondary:hover { background: var(--tint); transform: translateY(-2px); }
+.btn-glass { border: 1.5px solid rgba(255, 255, 255, 0.5); color: #fff; background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(6px); }
+.btn-glass:hover { background: rgba(255, 255, 255, 0.2); }
+
+.hero {
+  position: relative; isolation: isolate;
+  background:
+    radial-gradient(60% 70% at 85% 15%, rgba(232, 111, 28, 0.38) 0%, transparent 60%),
+    radial-gradient(50% 60% at 10% 100%, rgba(216, 58, 20, 0.35) 0%, transparent 65%),
+    linear-gradient(100deg, rgba(28, 23, 21, 0.94) 0%, rgba(40, 20, 12, 0.74) 52%, rgba(60, 22, 8, 0.38) 100%),
+    url("images/jollof-suya.png") center / cover no-repeat;
+}
+.hero::after {
+  content: ""; position: absolute; inset: auto 0 0 0; height: 6rem; z-index: -1;
+  background: linear-gradient(to bottom, transparent, var(--linen));
+  opacity: 0.0;
+}
+
+/* Big, bold hero call-to-action */
+.btn-xl {
+  min-height: 64px; padding: 0 2.5rem; font-size: 1.2rem; font-weight: 800;
+  font-family: "Outfit", sans-serif; letter-spacing: 0.03em; text-transform: uppercase;
+  background: linear-gradient(180deg, #ef4a1e 0%, #d83a14 100%);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.18), 0 14px 32px -6px rgba(216, 58, 20, 0.7);
+}
+.btn-xl:hover { box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.25), 0 20px 40px -6px rgba(216, 58, 20, 0.85); }
+@media (max-width: 639px) { .btn-xl { width: 100%; min-height: 68px; } }
+
+.chip {
+  display: inline-flex; align-items: center; height: 28px; padding: 0 0.75rem;
+  border-radius: 9999px; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;
+}
+.chip-green { background: #e8f5e9; color: #1b5e20; }
+.chip-orange { background: #fff0e0; color: #9c4400; }
+
+.dish-img { border-radius: 1.5rem 1.5rem 0 0; overflow: hidden; aspect-ratio: 4 / 3; }
+.dish-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.card:hover .dish-img img { transform: scale(1.06); }
+
+.price { font-family: "Outfit", sans-serif; font-weight: 700; font-size: 1.35rem; font-variant-numeric: tabular-nums lining-nums; color: var(--scotch-red); }
+
+.quote-band { background: linear-gradient(135deg, #d83a14 0%, #b22500 100%); box-shadow: var(--shadow-3); }
+
+/* Floating order pill — mobile only */
+.feast-bar {
+  position: fixed; left: 1rem; right: 1rem; bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); z-index: 40;
+  animation: pulse-warm 2.4s ease-in-out infinite;
+}
+@keyframes pulse-warm {
+  0%, 100% { box-shadow: var(--shadow-3); }
+  50% { box-shadow: 0 0 0 8px rgba(216, 58, 20, 0.18), var(--shadow-3); }
+}
+@media (min-width: 768px) { .feast-bar { display: none; } }
+
+:focus-visible { outline: 3px solid rgba(216, 58, 20, 0.45); outline-offset: 3px; }
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
